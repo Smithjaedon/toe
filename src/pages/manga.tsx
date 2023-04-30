@@ -5,7 +5,7 @@ import React from "react";
 import Link from "next/link";
 import Navbar from "./components/navbar";
 
-const Home: NextPage = () => {
+const Test: NextPage = () => {
   return (
     <>
       <Head>
@@ -19,9 +19,10 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400 font-[Lato]">
         <Navbar />
+        <h1>Hello World</h1>
       </main>
     </>
   );
 };
 
-export default Home;
+export default Test;
