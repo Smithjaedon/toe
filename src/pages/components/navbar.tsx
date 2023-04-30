@@ -2,6 +2,7 @@
 import { type NextPage } from "next";
 import React from "react";
 import Link from "next/link";
+import { SignIn, SignInButton, SignedOut } from "@clerk/nextjs";
 
 const Navbar: NextPage = () => {
   const [toggle, setToggle] = React.useState(false);
@@ -81,7 +82,7 @@ const Navbar: NextPage = () => {
         </Link>
         <button className="mx-2 flex w-24 items-center justify-center rounded-md bg-indigo-600 drop-shadow-md hover:bg-indigo-500">
           <span className="btn py-1 text-right text-xl text-white ">
-            SignIn
+            <SignInButton />
           </span>
         </button>
         {toggle && (
